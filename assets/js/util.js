@@ -436,6 +436,7 @@
 
 					$this.find('input[type=text],input[type=password],textarea')
 						.each(function(event) {
+							console.log(event)
 
 							var i = $(this);
 
@@ -470,6 +471,7 @@
 							switch (this.type) {
 
 								case 'submit':
+
 								case 'reset':
 									break;
 
