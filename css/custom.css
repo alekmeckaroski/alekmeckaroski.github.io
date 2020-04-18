@@ -42,4 +42,14 @@
     .portfolio-items {
         margin-top: 25%;
     }
+    .menu {
+        color: white !important;
+    }
+    .close {
+        color: white !important;
+    }
+    .dropdown_inner a {
+        color: white !important;
+    }
+    
 }

@@ -542,7 +542,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	height: auto;
 	float: left;
 	clear: both;
-	background-color: #fff;
+	background-color: #171717;
 	padding: 20px 0px;
 	border-bottom: 1px solid rgba(0,0,0,.2);
 }
@@ -567,7 +567,7 @@ body.extra .arlo_tm_rightpart.opened{padding-left: 400px;}
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #fff;
+	background-color: #171717;
 	border-bottom: 1px solid rgba(0,0,0,.2);
 	display: none;
 }
@@ -4947,7 +4947,7 @@ body[data-homepage="second"] h3{font-family: "Saira" !important;}
 	position: absolute;
 	width: 30px;
 	height: 3px;
-	background-color: #FFFFFF;
+	background-color: #171717;
 	display: inline-block;
 }
 .arlo_tm_topbar_another .trigger_main .two{margin-top: 12px;}
