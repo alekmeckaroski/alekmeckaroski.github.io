@@ -1,0 +1,45 @@
+#landing-name {
+	font-size: 4em !important;
+}
+
+.portfolio-items {
+    margin-top: 6%;
+}
+.portfolio-item {
+    padding: 25px 10px;
+}
+
+.portfolio-item:nth-child(odd) {
+    background-color: #FBC02D;
+    -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    color: white
+}
+
+.portfolio-item:nth-child(odd) h3 {
+    color: white;
+}
+
+.portfolio-item:nth-child(even) {
+    color: white;
+}
+.portfolio-item:nth-child(even) h3 {
+    color: white;
+}
+.portfolio-item:nth-child(even) img {
+    background-color: white;
+}
+
+.technology-stack > img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 480px) {
+    #landing-name {
+        font-size: 2em !important;
+    }
+    .portfolio-items {
+        margin-top: 25%;
+    }
+}
