@@ -11,6 +11,9 @@ jQuery(document).ready(function(){
 	
 	// here all ready functions
 	
+	arlo_tm_popup_news();
+	arlo_tm_popupscroll();
+	arlo_tm_popup();
 	arlo_tm_anchor();
 	arlo_tm_down();
 	arlo_tm_imgtosvg();
@@ -24,19 +27,11 @@ jQuery(document).ready(function(){
 	arlo_tm_portfolio();
 	arlo_tm_projects();
 	arlo_tm_isotope();
-	arlo_tm_partners();
 	arlo_tm_contact_form();
 	arlo_tm_location();
 	arlo_tm_ripple();
 	arlo_tm_videoplayer();
 	arlo_tm_totop();
-	arlo_tm_music();
-	arlo_about_img();
-	robex_menu_bg();
-	arlo_tm_about_top();
-	arlo_tm_tweenmax_menu();
-	arlo_tm_rightpart_padding();
-	arlo_tm_sidebarmenu();
 	arlo_tm_about_animation();
 	
 	
@@ -46,7 +41,7 @@ jQuery(document).ready(function(){
 	});
 	
 	jQuery(window).on('scroll',function(){
-		arlo_tm_hero_effect();
+		arlo_tm_popupscroll();
 	});
 	
 	jQuery(window).load('body', function(){
@@ -60,6 +55,103 @@ jQuery(document).ready(function(){
 // -----------------------------------------------------
 // ---------------   FUNCTIONS    ----------------------
 // -----------------------------------------------------
+
+function arlo_tm_popup_news(){
+	"use strict";
+	
+	var list		= jQuery('.arlo_tm_news .news_inner ul li');
+	var popupMenu	= jQuery('.arlo_tm_popup_news');
+	var popupInner	= popupMenu.find('.news_inner');
+	var closer		= popupMenu.find('.closer');
+	
+	list.each(function(){
+		var element		= jQuery(this);
+		var button		= element.find('.link,.title a');
+		var elHTML		= element.html();
+		var image		= element.find('.image .main');
+		var imageURL	= image.data('img-url');
+		var title		= element.find('.title');
+		var titleHref	= title.find('a').html();
+		
+		button.on('click',function(){
+			popupMenu.addClass('opened');
+			popupInner.html(elHTML);
+			image = popupInner.find('.image .main');
+			image.css({backgroundImage: 'url('+imageURL+')'});
+			title = popupInner.find('.title');
+			title.html(titleHref);
+			
+			return false;
+		});
+	});
+	closer.on('click',function(){
+			popupMenu.removeClass('opened');
+			popupInner.html('');
+			return false;
+		});
+}
+
+// -----------------------------------------------------
+// -------------    POPUP SCROLL -----------------------
+// -----------------------------------------------------
+
+function arlo_tm_popupscroll(){
+	
+	"use strict";
+	
+	var H				= jQuery(window).height();
+	var scrollable		= jQuery('.arlo_tm_popup_news.scrollable');
+	
+	var popupBox		= jQuery('.arlo_tm_popup_news');
+	
+	popupBox.css({height:H-100});
+	
+	scrollable.each(function(){
+		var element		= jQuery(this);
+		var wH			= jQuery(window).height();
+		
+		element.css({height: wH});
+		
+		element.niceScroll({
+			touchbehavior:false,
+			cursorwidth:0,
+			autohidemode:true,
+			cursorborder:"0px solid #fff"
+		});
+	});
+}
+
+// -----------------------------------------------------
+// --------------------   POPUP    ---------------------
+// -----------------------------------------------------
+
+function arlo_tm_popup(){
+		"use strict";
+	
+		jQuery('.gallery_zoom').each(function() { // the containers for all your galleries
+			jQuery(this).magnificPopup({
+				delegate: 'a.zoom', // the selector for gallery item
+				type: 'image',
+				gallery: {
+				  enabled:true
+				},
+				removalDelay: 300,
+				mainClass: 'mfp-fade'
+			});
+
+		});
+		jQuery('.popup-youtube').each(function() { // the containers for all your galleries
+			jQuery(this).magnificPopup({
+				disableOn: 700,
+				type: 'iframe',
+				mainClass: 'mfp-fade',
+				removalDelay: 160,
+				preloader: false,
+				fixedContentPos: false
+			});
+		});
+	}
+
 
 // -----------------------------------------------------
 // --------------------    WOW JS    -------------------
@@ -75,25 +167,13 @@ function arlo_tm_anchor(){
 	
 	"use strict";
 	
-	jQuery('.arlo_tm_leftpart .inner .menu ul li a,.arlo_tm_topbar .dropdown .dropdown_inner ul li a,.arlo_tm_topmenu .topmenu_inner .menu ul li a').off().on('click',function(e){
+	jQuery('.arlo_tm_leftpart .inner .menu ul li a,.arlo_tm_topbar .dropdown .dropdown_inner ul li a').off().on('click',function(e){
 		e.stopPropagation();
 		var element = jQuery(this);
 		var url			= element.attr('href');
 		if(url !== '#' && url.charAt(0) === '#'){
 			$('html, body').animate({
 				scrollTop: $(url).offset().top
-			}, 1000);
-		}
-		return false;
-	});
-	
-	jQuery('.arlo_tm_topbar_another .menu_list ul li a,.arlo_tm_topbar.another .dropdown .dropdown_inner ul li a').off().on('click',function(e){
-		e.stopPropagation();
-		var element = jQuery(this);
-		var url			= element.attr('href');
-		if(url !== '#' && url.charAt(0) === '#'){
-			$('html, body').animate({
-				scrollTop: $(url).offset().top-220
 			}, 1000);
 		}
 		return false;
@@ -117,14 +197,6 @@ function arlo_tm_down(){
 		return false;
 	});
 }
-
-// -----------------------------------------------------
-// ------------   WAIT FOW IMAGES    -------------------
-// -----------------------------------------------------
-
-$('.masonry img').waitForImages(function() {
-    arlo_tm_isotope();
-});	
 
 // -----------------------------------------------------
 // ---------------    IMAGE TO SVG    ------------------
@@ -169,15 +241,15 @@ function arlo_tm_kenburn_slider(){
 	"use strict";
 	
 		jQuery(function() {
-			jQuery('.arlo_tm_kenburn_hero .overlay_slider').vegas({
+			jQuery('.arlo_tm_hero_header .overlay_slider').vegas({
 			timer:false,	
 			animation: [ 'kenburnsUp',  'kenburnsLeft', 'kenburnsRight'],
 			delay:7000,
 
 			slides: [
-				{ src: 'img/slider/1.jpg' },
-				{ src: 'img/slider/2.jpeg' },
-				{ src: 'img/slider/3.jpg' },
+				{ src: 'img/slider/4.jpeg' },
+				{ src: 'img/slider/5.jpg' },
+				{ src: 'img/slider/6.jpg' },
 			]
 
 		});
@@ -322,7 +394,7 @@ function arlo_tm_animate_text(){
 	var animateSpan			= jQuery('.arlo_tm_animation_text_word');
 	
 		animateSpan.typed({
-			strings: ['Scalable Architectures', 'Microservices', 'JavaScript', 'Java', 'Quality Code'],
+			strings: ["Scalable Architectures", "Microservices", "JavaScript", "Java"],
 			loop: true,
 			startDelay: 1e3,
 			backDelay: 2e3
@@ -362,14 +434,14 @@ function tdProgress(container){
 	
 	"use strict";
 		
-	container.find('.progress_inner').each(function(i) {
+	container.find('.progress_inner').each(function() {
 		var progress 		= jQuery(this);
 		var pValue 			= parseInt(progress.data('value'), 10);
 		var pColor			= progress.data('color');
 		var pBarWrap 		= progress.find('.bar');
 		var pBar 			= progress.find('.bar_in');
 		pBar.css({width:pValue+'%', backgroundColor:pColor});
-		setTimeout(function(){pBarWrap.addClass('open');},(i*300));
+		setTimeout(function(){pBarWrap.addClass('open');});
 	});
 }
 
@@ -394,8 +466,8 @@ function arlo_tm_portfolio(){
 	if(jQuery().isotope) {
 
 		// Needed variables
-		var list 		 = jQuery('.arlo_tm_portfolio_list');
-		var filter		 = jQuery('.arlo_tm_portfolio_filter');
+		var list 		 = jQuery('.arlo_tm_portfolio .portfolio_list ul');
+		var filter		 = jQuery('.arlo_tm_portfolio .portfolio_filter ul');
 
 		if(filter.length){
 			// Isotope Filter 
@@ -461,54 +533,6 @@ function arlo_tm_isotope(){
 		}
 	});
 }
-
-// -----------------------------------------------------
-// ----------------    OWL CAROUSEL    -----------------
-// -----------------------------------------------------
-
-function arlo_tm_partners(){
-	
-	"use strict";
-	
-		var carousel1			= jQuery('.arlo_tm_partners .owl-carousel');
-		carousel1.owlCarousel({
-				loop: true,
-				items: 4,
-				lazyLoad: true,
-				margin: 40,
-				autoplay: true,
-				autoplayTimeout: 4000,
-				smartSpeed: 2000,
-				dots: true,
-				nav: false,
-				navSpeed: true,
-				responsive:{
-					0:{items:1},
-					480:{items:2},
-					768:{items:3},
-					1040:{items:3},
-					1200:{items:4},
-					1600:{items:4},
-					1920:{items:4}
-				}
-		});
-	
-		var carousel2			= jQuery('.arlo_tm_testimonial .owl-carousel');
-		carousel2.owlCarousel({
-				loop: true,
-				animateOut: 'fadeOut',
-				animateIn: 'fadeIn',
-				items: 1,
-				lazyLoad: true,
-				autoplay: true,
-				autoplayTimeout: 5000,
-				smartSpeed: 2000,
-				dots: true,
-				nav: false,
-				navSpeed: true
-		});
-		
-	}
 
 // -----------------------------------------------------
 // ----------------    CONTACT FORM    -----------------
@@ -626,205 +650,6 @@ function arlo_tm_totop(){
 		return false;
 	});
 }
-
-// -----------------------------------------------------
-// ----------------------    MUSIC   -------------------
-// -----------------------------------------------------
-
-jQuery('body.music').append('<audio loop autoplay volume="0" id="audio-player"><source src="audio/2.mp3" type="audio/mpeg"></audio>');
-    var audio2 = jQuery("#audio-player");
-    audio2.volume = 0.2;
-
-function arlo_tm_music(){
-      jQuery('.morocco_music').css({'visibility':'visible'});
-      jQuery('body').addClass("audio-on");
-      if (jQuery('body').hasClass('audio-off')) {
-        jQuery('body').removeClass('audio-on');
-      } 
-      jQuery(".morocco_music").on('click', function() {
-          jQuery('body').toggleClass("audio-on audio-off");         
-          if (jQuery('body').hasClass('audio-off')) {
-            audio2[0].pause();
-          } 
-          if (jQuery('body').hasClass('audio-on')) {
-            audio2[0].play();
-          }
-      });
-
-}
-
-// -----------------------------------------------------
-// --------    HOME SECOND HERO EFFECT    --------------
-// -----------------------------------------------------
-
-function arlo_tm_hero_effect(){
-	
-	"use strict";
-	
-	jQuery(window).on('scroll',function(){
-		var currentScroll		= window.pageYOffset;
-		jQuery(".arlo_tm_second_homepage .hero_wrap").css({'transform': 'scale('+(100 - currentScroll/100)/99+')','opacity' : (1 - (currentScroll/20) / 15)});
-	});
-	
-}
-
-// -----------------------------------------------------
-// --------------------    HERO HEIGHT    --------------
-// -----------------------------------------------------
-
-function arlo_tm_about_top(){
-		
-	var hero	= jQuery('.arlo_tm_second_homepage .hero_wrap').height();
-	var about	= jQuery('.arlo_tm_second_homepage #about');
-		
-	about.css({marginTop:hero});
-}
-// -----------------------------------------------------
-// --------------------    ABOUT IMAGE    --------------
-// -----------------------------------------------------
-
-function arlo_about_img(){
-	"use strict";
-		
-		var name		= jQuery('.arlo_tm_second_homepage .arlo_tm_about .about_main p .name');
-		var image		= jQuery('.arlo_tm_second_homepage .arlo_tm_about .about_image');
-		
-		name.on('mouseenter',function(){
-			image.addClass('opened');
-		})
-		.on('mouseleave',function(){
-			image.removeClass('opened');
-		});
-		
-	}
-
-// -----------------------------------------------------
-// ----------------------    BG SCROLL    --------------
-// -----------------------------------------------------
-
-function robex_menu_bg(){
-	"use strict";
-	jQuery(window).on('scroll',function(){
-		var WinOffset		= jQuery(window).scrollTop();
-		var topBar			= jQuery('.arlo_tm_topbar_another');
-		var topMenu			= jQuery('.arlo_tm_topmenu');
-		if(WinOffset >= 500){
-			topBar.addClass('animate');
-			topMenu.addClass('animate');
-		}else{
-			topBar.removeClass('animate');
-			topMenu.removeClass('animate');
-		}
-	});
-}
-
-// -----------------------------------------------------
-// -------------    TWEENMAX MENU    -------------------
-// -----------------------------------------------------
-
-function arlo_tm_tweenmax_menu(){
-		
-		var t1			= new TimelineMax({paused:true});
-
-		t1.to(".arlo_tm_topbar_another .trigger_main .one", 0.5,{
-			y:6,
-			rotation:45,
-			ease:Expo.easeinOut
-		});
-		t1.to(".arlo_tm_topbar_another .trigger_main .two", 0.5,{
-			y:- 6,
-			rotation:-45,
-			ease:Expo.easeinOut,
-			delay:-0.5
-		});	
-		t1.to(".beker_tm_menu",0.5,{
-			right:"-40px",
-			ease:Expo.easeinOut,
-			delay:-0.5
-		});
-		t1.staggerFrom(".arlo_tm_topbar_another .menu_list ul li", 0.4, {x:25, opacity:0, ease:Expo.easeinOut},0.1);
-		t1.reverse();
-
-		jQuery('.arlo_tm_topbar_another .trigger_main').on('click',function(){
-			t1.reversed(!t1.reversed());
-			return false;
-		});	
-	}
-
-
-// -----------------------------------------------------
-// -------------    SIDEBAR NENU    --------------------
-// -----------------------------------------------------	
-	
-function arlo_tm_sidebarmenu(){
-	
-	"use strict";
-	
-	var t1			= new TimelineMax({paused:true});
-	
-	t1.to(".arlo_tm_sidebar_wrap_menu .trigger_wrap .trigger .one", 0.2,{
-		y:6,
-		rotation:45,
-		ease:Expo.easeinOut
-	});
-	t1.to(".arlo_tm_sidebar_wrap_menu .trigger_wrap .trigger .two", 0.2,{
-		y:- 6,
-		rotation:-45,
-		ease:Expo.easeinOut,
-		delay:-0.2
-	});	
-	t1.to(".arlo_tm_sidebar_wrap_menu .menu_wrap",0.2,{
-		left:"90px",
-		ease:Expo.easeinOut,
-		delay:-0.2
-	});
-	t1.staggerFrom(".arlo_tm_sidebar_wrap_menu .menu_wrap .menu_inner .nav_list > ul > li", 0.1, {y:25, opacity:0, ease:Expo.easeinOut},0.1);
-	t1.reverse();
-	
-	jQuery('.arlo_tm_sidebar_wrap_menu .trigger_wrap .link').on('click',function(){
-		t1.reversed(!t1.reversed());
-		return false;
-	});
-	
-	
-	var aaaa = jQuery('.arlo_tm_sidebar_wrap_menu .menu_wrap .menu_inner .nav_list > ul > li > a');
-	aaaa.off().on('click',function(e){
-		e.stopPropagation();
-		var element = jQuery(this);
-		var url			= element.attr('href');
-		if(url !== '#' && url.charAt(0) === '#'){
-			aaaa.parent().removeClass('active');
-			element.parent().addClass('active');
-			$('html, body').animate({
-				scrollTop: $(url).offset().top
-			}, 1000);
-		}
-		return false;
-	});	
-		
-}
-
-function arlo_tm_rightpart_padding(){
-	"use strict";
-	
-	var rightpart		= jQuery('body.extra .arlo_tm_rightpart');
-	var button			= jQuery('.arlo_tm_sidebar_wrap_menu .info_wrap .inner_wrap .link');
-	
-	button.on('click',function(){
-		var element = jQuery(this);
-		if(element.hasClass('opened')){
-			setTimeout(function(){
-				element.removeClass('opened');
-				rightpart.removeClass('opened');
-			},500);
-		}else{
-			element.addClass('opened');
-			rightpart.addClass('opened');
-		}
-		return false;
-	});
-}
-
 
 // -----------------------------------------------------
 // -------------    PARALLAX ANIMATION    --------------

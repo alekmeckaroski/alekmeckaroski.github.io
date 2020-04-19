@@ -17,24 +17,17 @@
 
 <!-- STYLES -->
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,400i,600,600i,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Nunito:300i,400,400i,600,600i,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Saira:300,400,500,600,700&display=swap" rel="stylesheet">
-<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,700,700i,800&display=swap" rel="stylesheet">
 
-
-
-
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
 <link rel="stylesheet" type="text/css" href="css/plugins.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/custom.css">
+<link rel="stylesheet" type="text/css" href="css/styler.css" />
 <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
 <!-- /STYLES -->
 
 </head>
 
-<body data-homepage="second">
+<body class="dark">
 	
 	<!-- PRELOADER -->
 	<div class="arlo_tm_preloader">
@@ -48,48 +41,20 @@
 <!-- WRAPPER ALL -->
 <div class="arlo_tm_all_wrap">
 	<div class="wrapper_inner">
-		
-		<!-- MENU -->
-		<div class="arlo_tm_topbar_another">
-			<div class="mainpart">
-				<div class="container">
-					<div class="inner">
-						<div class="logo">
-							<a href="#"></a>
-						</div>					
-						<div class="top_menu">
-							<div class="menu_list">
-								<ul>
-									<li><a href="#home">Home</a></li>
-									<li><a href="#about">About</a></li>
-									<!-- <li><a href="#services">Services</a></li> -->
-									<li><a href="#portfolio">Portfolio</a></li>
-									<!-- <li><a href="#team">Team</a></li>
-									<li><a href="#pricing">Pricing</a></li>
-									<li><a href="#news">News</a></li> -->
-									<li><a href="#contact">Contact</a></li>
-								</ul>
-							</div>
-							<div class="trigger_main">
-								<a href="#">
-									<span class="one"></span>
-									<span class="two"></span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>			
+		<div class="arlo_tm_popup_news scrollable">
+			<a class="closer" href="#">Close</a>
+			<div class="container">
+				<div class="news_inner"></div>					
+			</div>
 		</div>
-		<!-- /MENU -->
 		
 		<!-- Topbar -->
-		<div class="arlo_tm_topbar another">
+		<div class="arlo_tm_topbar">
 			<div class="topbar_inner">
 				<div class="container">
 					<div class="topbar_in">
 						<div class="logo">
-							<a href="#"></a>
+							<a href="#"><img src="img/logo/mobile.png" alt="" /></a>
 						</div>
 						<div class="trigger">
 							<a href="#">
@@ -117,658 +82,578 @@
 		</div>
 		<!-- /Topbar -->
 		
-		<!-- HOMEPAGE 2 -->
-		<div class="arlo_tm_second_homepage">
-			
-			<!-- HERO -->
-			<div class="arlo_tm_section home" id="home">
-				<div class="hero_wrap" data-img-url="img/slider/mavrovo.jpg">
-					<div class="overlay"></div>
-					<div class="container">
-						<div class="hero_texts">
-							<h3 id="landing-name" class="name">I'm <br/>Aleksandar <br/> Mechkaroski</h3>
-							<div class="www">
-								<span class="subtitle">I'm all about
-									<span class="arlo_tm_animation_text_word"></span>
-								</span>
+		<!-- LEFTPART -->
+		<div class="arlo_tm_leftpart">
+			<div class="inner">
+				<div class="logo">
+					<a class="dark" href="#"><img src="img/logo/logo_transparent.png" alt="" /></a>
+					<a class="light" href="#"><img src="img/logo/logo_transparent.png" alt="" /></a>
+				</div>
+				<div class="menu scrollable">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<!-- <li><a href="#services">Services</a></li> -->
+						<li><a href="#portfolio">Portfolio</a></li>
+						<!-- <li><a href="#news">News</a></li> -->
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<div class="bottom">
+					<div class="social">
+						<ul>
+							<li><a target="_blank" href="https://www.linkedin.com/in/aleksandar-meckaroski-2737baa2/"><i class="xcon-linkedin"></i></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/alekmeckaroski"><i class="xcon-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="resize">
+					<a href="#"><span></span></a>
+				</div>
+			</div>
+		</div>
+		<!-- /LEFTPART -->
+		
+		<!-- RIGHTPART -->
+		<div class="arlo_tm_rightpart">
+			<div class="rightpart_inner">
+				
+				<!-- HERO -->
+				<div class="arlo_tm_section" id="home">
+					<div class="arlo_tm_hero_header">
+						<div class="hero_image jarallax" data-img-url="img/slider/7.jpg" data-speed="0"></div>
+						<div class="overlay"></div>
+						<div class="hero_content">
+							<div class="image_wrap">
+								<img src="img/about/500x500.jpg" alt="" />
+								<div class="main" data-img-url="img/about/me.png"></div>
 							</div>
-							<div class="another_button">
-								<a target="_blank" href="https://drive.google.com/open?id=14Gw1l27WRYL5wWGAasxIfE8mo4Siwepr">Grab CV</a>
+							<div class="name_holder">
+								<h3>Aleksandar <span>Mechkaroski</span></h3>
+							</div>
+							<div class="text_typing">
+								<p>Everything related to <span class="arlo_tm_animation_text_word"></span></p>
 							</div>
 						</div>
-						<div class="down">
-							<div class="line_wrapper">
-								<div class="line"></div>
+						<div class="arlo_tm_arrow_wrap bounce anchor">
+							<a href="#about"><i class="xcon-angle-double-down"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /HERO -->
+				
+				<!-- ABOUT -->
+				<div class="arlo_tm_section" id="about">
+					<div class="arlo_tm_about_wrap_all">
+						<div class="arlo_tm_about">
+							<div class="container">
+								<div class="arlo_title_holder">
+									<span>Main Info</span>
+									<h3>Get to know me</h3>
+								</div>
+								<div class="about_inner">
+									<div class="leftbox">
+										<div class="about_image_wrap parallax" data-relative-input="true">
+											<div class="image layer" data-depth="0.1">
+												<img src="img/about/550x650.jpg" alt="" />
+												<div class="inner" data-img-url="img/about/jas.jpg"></div>
+											</div>
+											<div class="border layer" data-depth="0.2">
+												<img src="img/about/550x650.jpg" alt="" />
+												<div class="inner"></div>
+											</div>
+										</div>
+									</div>
+									<div class="rightbox">
+										<div class="about_title">
+											<h3>I'm Aleksandar Mechkaroski</h3>
+										</div>
+										<div class="text">
+											<p>Hi! My name is <span>Aleksandar Mechkaroski</span>. Full stack developer. Currently working and living in Skopje, Macedonia. I am extremely passionate about technology. In my professional experience I worked mainly with JavaScript, Java and Python. I like building new stuff and work with other people – nothing really interesting is ever built alone!</p>
+										</div>
+										<div class="about_short_contact_wrap">
+											<ul>
+												<li>
+													<img class="svg" src="img/svg/location-1.svg" alt="" />
+													<span><label>Location:</label> <a class="href_location" href="#">Skopje, Macedonia</a></span>
+												</li>
+												<li>
+													<img class="svg" src="img/svg/game-controller-2.svg" alt="" />
+													<span><label>Interests:</label> Playstation, Reading</span>
+												</li>
+												<li>
+													<img class="svg" src="img/svg/study-5.svg" alt="" />
+													<span><label>Study:</label> <a class="href_location" href="#"> Univercity of Ss. Cyrill and Methodius</a></span>
+												</li>
+												<li>
+													<img class="svg" src="img/svg/degree-1.svg" alt="" />
+													<span><label>Degree:</label> Bachelor</span>
+												</li>	
+												<li>
+													<img class="svg" src="img/svg/message-3.svg" alt="" />
+													<span><label>Mail:</label> <a href="mailto:aleksandar.meckaroski@gmail.com">aleksandar.meckaroski&#64;gmail.com</a></span>
+												</li>
+												<li>
+													<img class="svg" src="img/svg/call-2.svg" alt="" />
+													<span><label>Phone:</label> <a href="tel:+77 022 177 05 05">+389 72 775 051</a></span>
+												</li>
+											</ul>
+										</div>
+										<div class="buttons">
+											<ul>
+												<li><a target="_blank" href="https://drive.google.com/open?id=14Gw1l27WRYL5wWGAasxIfE8mo4Siwepr"><span>Grab my CV</span></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- /HERO -->
-			
-			<!-- About -->
-			<div class="arlo_tm_section" id="about">
-				<div class="arlo_tm_about">
-					<div class="container">
-						<div class="about_in">
+				<!-- /ABOUT -->
+				
+				<!-- SERVICES -->
+				<div class="arlo_tm_section" id="services">
+					<div class="arlo_tm_services">
+						<div class="container">
 							<div class="arlo_title_holder">
-								<h3>About Me</h3>
+								<span>What I Do</span>
+								<h3>Knowledge</h3>
 							</div>
-							<div class="about_main">
-								<div class="text_wrap wow fadeInLeft" data-wow-duration="0.8s">
-									<p class="text">Hello! My name is <a class="name">Aleksandar Mechkaroski</a>. <br/>
-										Full stack developer. Currently working and living in Skopje, Macedonia.
-									</p>
-									<p>
-										I am extremely passionate about technology.
-										In my professional experience I worked mainly with JavaScript, Java and Python.
-										I like building new stuff and work with other people – nothing really interesting is ever built alone!
-									</p>
+							<div class="service_inner">
+								<div class="arlo_tm_progress_wrap">
+									<div class="progress_wrap_inner">
+										<div class="left">
+											<p>“As to methods there may be a million and then some, but principles are few. The man who grasps principles can successfully select his own methods. The man who tries methods, ignoring principles, is sure to have trouble.” <br/> - Ralph Waldo Emerson</p>
+										</div>
+										<div class="right">
+											<div class="arlo_progress">
+												<div class="progress_inner" data-value="90" data-color="#FBC02D">
+													<span><span class="label">Javascript</span><span class="number">90%</span></span>
+													<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+												</div>
+												<div class="progress_inner" data-value="85" data-color="#FBC02D">
+													<span><span class="label">Angular</span><span class="number">85%</span></span>
+													<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+												</div>
+												<div class="progress_inner" data-value="80" data-color="#FBC02D">
+													<span><span class="label">Nodejs</span><span class="number">80%</span></span>
+													<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+												</div>
+												<div class="progress_inner" data-value="80" data-color="#FBC02D">
+													<span><span class="label">Java</span><span class="number">70%</span></span>
+													<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+												</div>
+												<div class="progress_inner" data-value="70" data-color="#FBC02D">
+													<span><span class="label">Spring</span><span class="number">70%</span></span>
+													<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+												</div>
+												<div class="progress_inner" data-value="70" data-color="#FBC02D">
+													<span><span class="label">Jenkins</span><span class="number">70%</span></span>
+													<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="social_icons">
-									<span>Follow me:</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /SERVICES -->
+				
+				<!-- PORTFOLIO -->
+				<div class="arlo_tm_section" id="portfolio">
+					<div class="arlo_tm_portfolio">
+						<div class="container">
+							<div class="arlo_title_holder">
+								<span>Creative Works</span>
+								<h3>Portfolio</h3>
+							</div>
+							<div class="portfolio_inner">
+								<div class="container portfolio-items">
+									<div class="wow fadeInLeft portfolio-item" data-wow-duration="0.8s">
+										<div class="container">
+											<h3>UGT Photon - DigiBet</h3>
+											<p>Rewriting the whole front-end part of the application running on betting terminal to Angular</p>
+											<p class="technology-stack">
+												<img src="img/technologies/icons8-angularjs-50-3.png"></img>
+												<img src="img/technologies/icons8-github-50.png"></img>
+												<img src="img/technologies/icons8-jenkins-50.png"></img>
+											</p>
+											<p><a href="https://www.digibet.com/" target="_blank">See it here</a></p>
+										</div>
+									</div>
+									<div class="wow fadeInRight portfolio-item" data-wow-duration="0.8s">
+										<div class="container">
+											<h3>Ving</h3>
+											<p>Communication Platform that utilizes the power of WebRTC to allow company employees to communicate between themselves</p>
+											<p class="technology-stack"> 
+												<img src="img/technologies/icons8-angularjs-50-2.png"></img>
+												<img src="img/technologies/icons8-nodejs-50.png"></img>
+												<img src="img/technologies/icons8-github-50.png"></img>
+												<img src="img/technologies/icons8-jenkins-50.png"></img>
+											</p>
+										</div>
+									</div>
+									<div class="wow fadeInLeft portfolio-item" data-wow-duration="0.8s">
+										<div class="container">
+											<h3>Hunter</h3>
+											<p>Internal project to develop a software solution to support the Talent Acquisition process</p>
+											<p class="technology-stack">
+												<img src="img/technologies/icons8-spring-logo-50.png"></img>
+												<img src="img/technologies/icons8-jenkins-50.png"></img>
+											</p>
+										</div>
+									</div>
+									<div class="wow fadeInRight portfolio-item" data-wow-duration="0.8s">
+										<div class="container">
+											<h3>IBM Cognitive Solutions</h3>
+											<p>ChatBot that answers business questions and enhances IBM sellers experience using Watson Services and Machine Learning Algorithms</p>
+											<p class="technology-stack"> 
+												<img src="img/technologies/icons8-nodejs-50.png"></img>
+												<img src="img/technologies/icons8-github-50.png"></img>
+												<img src="img/technologies/icons8-jenkins-50.png"></img>
+											</p>
+										</div>
+									</div>
+									<div class="wow fadeInLeft portfolio-item" data-wow-duration="0.8s">
+										<div class="container">
+											<h3>Personal Counseling</h3>
+											<p>Application that will allow the users to have complete anonymous conversation with psychologists.</p>
+											<p class="technology-stack"> 
+												<img src="img/technologies/icons8-angularjs-50-2.png"></img>
+												<img src="img/technologies/icons8-nodejs-50.png"></img>
+												<img src="img/technologies/icons8-github-50.png"></img>
+												<img src="img/technologies/icons8-jenkins-50.png"></img>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /PORTFOLIO -->
+				
+				<!-- TESTIMONIAL -->
+				<!-- <div class="arlo_tm_section">
+					<div class="arlo_tm_testimonial">
+						<div class="testimonial_inner">
+							<div class="testimonial_bg">
+								<div class="image jarallax" data-speed-="0" data-img-url="img/slider/1.jpg"></div>
+								<div class="overlay"></div>
+							</div>
+							<div class="testimonial_content">
+								<div class="container">
+									<div class="content_inner">
+										<div class="icon">
+											<img class="svg" src="img/svg/quotes.svg" alt="" />
+										</div>
+										<div class="texts">
+											<p>We were looking for a logo with a touch of modernism. Arlo grasped our needs and produced a stunning design. Awesome to work with Arlo. Incredibly organized, easy to communicate with, responsive with next iterations.</p>
+											<div class="author">
+												<div class="image">
+													<div class="main" data-img-url="img/about/2.jpg"></div>
+												</div>
+												<div class="job">
+													<h3>Steve Collins</h3>
+													<span>Photographer</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<!-- /TESTIMONIAL -->
+				
+				<!-- TIMELINE -->
+				<div class="arlo_tm_section">
+					<div class="arlo_tm_timeline">
+						<div class="container">
+							<div class="arlo_title_holder">
+								<span>Working Process</span>
+								<h3>Experience</h3>
+							</div>
+							<div class="timeline_inner">
+								<div class="left">
 									<ul>
-										<li class="wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.2s"><a target="_blank" href="https://www.linkedin.com/in/aleksandar-meckaroski-2737baa2/"><i class="xcon-linkedin"></i></a></li>
-										<li class="wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.3s"><a target="_blank" href="https://www.instagram.com/alekmeckaroski/"><i class="xcon-instagram"></i></a></li>
+										<li>
+											<div class="inner">
+												<img class="svg" src="img/svg/degree-5.svg" alt="" />
+												<p class="year">2014 - 2020</p>
+												<h3 class="title">University Ss. Cyrill and Methodius</h3>
+												<p class="text">Computer Science and Engineering</p>
+											</div>
+										</li>
 									</ul>
 								</div>
-								<div class="about_image">
+								<div class="right">
+									<ul>
+										<li>
+											<div class="inner">
+												<img class="svg" src="img/svg/portfolio.svg" alt="" />
+												<p class="year">09/2019 - Current</p>
+												<h3 class="title">Contract Software Engineer</h3>
+												<p class="text">IBM</p>
+											</div>
+										</li>
+										<li>
+											<div class="inner">
+												<img class="svg" src="img/svg/portfolio.svg" alt="" />
+												<p class="year">04/2017 - Current</p>
+												<h3 class="title">Software Engineer</h3>
+												<p class="text">Musala Soft</p>
+											</div>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- /About -->
-			
-			<!-- Services -->
-			<!-- <div class="arlo_tm_section" id="services">
-				<div class="arlo_services_wrap">
-					<div class="container">
-						<div class="arlo_title_holder">
-							<h3>What I Do</h3>
-						</div>
-						<div class="service_list">
-							<ul>
-								<li class="wow fadeInLeft" data-wow-duration="0.8s">
-									<div class="inner">
-										<h3 class="title">Photography</h3>
-										<p class="text">Photography is the art, application and practice of creating durable images by recording...</p>
-										<a class="link" href="#"></a>
-										<span class="one"></span>
-										<span class="two"></span>
-										<span class="three"></span>
-										<span class="four"></span>
-										<div class="icon_box">
-											<img class="svg" src="img/svg/camera-diaphragm.svg" alt="" />
-										</div>
-									</div>
-								</li>
-								<li class="wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
-									<div class="inner">
-										<h3 class="title">Marketing</h3>
-										<p class="text">Marketing refers to activities undertaken by a company to promote the buying...</p>
-										<a class="link" href="#"></a>
-										<span class="one"></span>
-										<span class="two"></span>
-										<span class="three"></span>
-										<span class="four"></span>
-										<div class="icon_box">
-											<img class="svg" src="img/svg/seo-performance-marketing-graphic.svg" alt="" />
-										</div>
-									</div>
-								</li>
-								<li class="wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.4s">
-									<div class="inner">
-										<h3 class="title">Social Media</h3>
-										<p class="text">Social media is computer-based technology that facilitates the sharing of ideas...</p>
-										<a class="link" href="#"></a>
-										<span class="one"></span>
-										<span class="two"></span>
-										<span class="three"></span>
-										<span class="four"></span>
-										<div class="icon_box">
-											<img class="svg" src="img/svg/share.svg" alt="" />
-										</div>
-									</div>
-								</li>
-								<li class="wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.6s">
-									<div class="inner">
-										<h3 class="title">Branding</h3>
-										<p class="text">Branding, by definition, is a marketing practice in which a company creates a name...</p>
-										<a class="link" href="#"></a>
-										<span class="one"></span>
-										<span class="two"></span>
-										<span class="three"></span>
-										<span class="four"></span>
-										<div class="icon_box">
-											<img class="svg" src="img/svg/layers.svg" alt="" />
-										</div>
-									</div>
-								</li>
-								<li class="wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.8s">
-									<div class="inner">
-										<h3 class="title">Adobe Illustrator</h3>
-										<p class="text">Adobe Illustrator is a software application for creating drawings, illustrations and...</p>
-										<a class="link" href="#"></a>
-										<span class="one"></span>
-										<span class="two"></span>
-										<span class="three"></span>
-										<span class="four"></span>
-										<div class="icon_box">
-											<img class="svg" src="img/svg/adobe-illustrator.svg" alt="" />
-										</div>
-									</div>
-								</li>
-								<li class="wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="1s">
-									<div class="inner">
-										<h3 class="title">App Development</h3>
-										<p class="text">App development is the act or process by which a mobile app is developed for devices.</p>
-										<a class="link" href="#"></a>
-										<span class="one"></span>
-										<span class="two"></span>
-										<span class="three"></span>
-										<span class="four"></span>
-										<div class="icon_box">
-											<img class="svg" src="img/svg/avatar.svg" alt="" />
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div> -->
-			<!-- /Services -->
-			
-			<!-- PORTFOLIO -->
-			<div class="arlo_tm_section" id="portfolio">
-				<div class="arlo_tm_portfolio">
-					<div class="container">
-						<div class="arlo_title_holder">
-							<h3>My <span>projects</span></h3>
-						</div>
-						<div class="arlo_tm_portfolio_titles"></div>
-					</div>
-					<div class="container portfolio-items">
-						<div class="wow fadeInLeft portfolio-item" data-wow-duration="0.8s">
-							<div class="container">
-								<h3>UGT Photon - DigiBet</h3>
-								<p>Rewriting the whole front-end part of the application running on betting terminal to Angular</p>
-								<p class="technology-stack">
-									<img src="img/technologies/icons8-angularjs-50-3.png"></img>
-									<img src="img/technologies/icons8-github-50.png"></img>
-									<img src="img/technologies/icons8-jenkins-50.png"></img>
-								</p>
-								<p><a href="https://www.digibet.com/" target="_blank">See it here</a></p>
+				<!-- /TIMELINE -->
+				
+				<!-- PRICING -->
+				<!-- <div class="arlo_tm_section">
+					<div class="arlo_tm_pricing">
+						<div class="container">
+							<div class="arlo_title_holder">
+								<span>Choose Plan</span>
+								<h3>Pricing</h3>
 							</div>
-						</div>
-						<div class="wow fadeInRight portfolio-item" data-wow-duration="0.8s">
-							<div class="container">
-								<h3>Ving</h3>
-								<p>Communication Platform that utilizes the power of WebRTC to allow company employees to communicate between themselves</p>
-								<p class="technology-stack"> 
-									<img src="img/technologies/icons8-angularjs-50-2.png"></img>
-									<img src="img/technologies/icons8-nodejs-50.png"></img>
-									<img src="img/technologies/icons8-github-50.png"></img>
-									<img src="img/technologies/icons8-jenkins-50.png"></img>
-								</p>
-							</div>
-						</div>
-						<div class="wow fadeInLeft portfolio-item" data-wow-duration="0.8s">
-							<div class="container">
-								<h3>Hunter</h3>
-								<p>Internal project to develop a software solution to support the Talent Acquisition process</p>
-								<p class="technology-stack">
-									<img src="img/technologies/icons8-spring-logo-50.png"></img>
-									<img src="img/technologies/icons8-jenkins-50.png"></img>
-								</p>
-							</div>
-						</div>
-						<div class="wow fadeInRight portfolio-item" data-wow-duration="0.8s">
-							<div class="container">
-								<h3>IBM Cognitive Solutions</h3>
-								<p>ChatBot that answers business questions and enhances IBM sellers experience using Watson Services and Machine Learning Algorithms</p>
-								<p class="technology-stack"> 
-									<img src="img/technologies/icons8-nodejs-50.png"></img>
-									<img src="img/technologies/icons8-github-50.png"></img>
-									<img src="img/technologies/icons8-jenkins-50.png"></img>
-								</p>
-							</div>
-						</div>
-						<div class="wow fadeInLeft portfolio-item" data-wow-duration="0.8s">
-							<div class="container">
-								<h3>Personal Counseling</h3>
-								<p>Application that will allow the users to have complete anonymous conversation with psychologists.</p>
-								<p class="technology-stack"> 
-									<img src="img/technologies/icons8-angularjs-50-2.png"></img>
-									<img src="img/technologies/icons8-nodejs-50.png"></img>
-									<img src="img/technologies/icons8-github-50.png"></img>
-									<img src="img/technologies/icons8-jenkins-50.png"></img>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /PORTFOLIO -->
-			
-			<!-- Resume -->
-			<div class="arlo_tm_section" id="resume">
-				<div class="arlo_tm_resume">
-					<div class="container">
-						<div class="arlo_title_holder">
-							<h3>My <span>Experience</span></h3>
-						</div>
-						<div class="resume_list">
-							<ul>
-								<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-									<div class="inner">
-										<h3 class="title">Contract Software Engineer</h3>
-										<p>IBM</p>
-										<p><a target-href="http://www.ibm.com">Company Page</a></p>
-										<div class="box">
-											<h3 class="year">2019 - Present</h3>
-										</div>
-										<span class="one"></span>
-										<span class="two"></span>
-										<span class="three"></span>
-										<span class="four"></span>
-									</div>
-								</li>
-								<li class="wow fadeInUp" data-wow-duration="0.8s">
-									<div class="inner">
-										<h3 class="title">Software Engineer</h3>
-										<p>Musala Soft</p>
-										<p><a href="musalasoft.com">Company Page</a></p>
-										<div class="box">
-											<h3 class="year">2017 - Present</h3>
-										</div>
-										<span class="one"></span>
-										<span class="two"></span>
-										<span class="three"></span>
-										<span class="four"></span>
-									</div>
-								</li>
-								<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-									<div class="inner">
-										<h3 class="title">Freelance Software Engineer</h3>
-										<p>Upwork</p>
-										<p><a target-href="http://www.upwork.com">Company Page</a></p>
-										<div class="box">
-											<h3 class="year">2016 - 2017</h3>
-										</div>
-										<span class="one"></span>
-										<span class="two"></span>
-										<span class="three"></span>
-										<span class="four"></span>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /Resume -->
-			
-			<!-- Skills -->
-			<div class="arlo_tm_section" id="skills">
-				<div class="arlo_skills_wrap">
-					<div class="container">
-						<div class="skills_inner">
-							<div class="left wow fadeInUp" data-wow-duration="0.8s">
-								<h3 class="title">Always thrive for quality</h3>
-								<p>“As to methods there may be a million and then some, but principles are few. The man who grasps principles can successfully select his own methods. The man who tries methods, ignoring principles, is sure to have trouble.” <br/> - Ralph Waldo Emerson</p>
-							</div>
-							<div class="right wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-								<div class="arlo_progress">
-									<div class="progress_inner" data-value="90" data-color="#FBC02D">
-										<span><span class="label">Javascript</span><span class="number">90%</span></span>
-										<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
-									</div>
-									<div class="progress_inner" data-value="85" data-color="#FBC02D">
-										<span><span class="label">Angular</span><span class="number">85%</span></span>
-										<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
-									</div>
-									<div class="progress_inner" data-value="80" data-color="#FBC02D">
-										<span><span class="label">Nodejs</span><span class="number">80%</span></span>
-										<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
-									</div>
-									<div class="progress_inner" data-value="80" data-color="#FBC02D">
-										<span><span class="label">Java</span><span class="number">70%</span></span>
-										<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
-									</div>
-									<div class="progress_inner" data-value="70" data-color="#FBC02D">
-										<span><span class="label">Spring</span><span class="number">70%</span></span>
-										<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
-									</div>
-									<div class="progress_inner" data-value="70" data-color="#FBC02D">
-										<span><span class="label">Jenkins</span><span class="number">70%</span></span>
-										<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- /Skills -->
-			
-			<!-- TEAM -->
-			<!-- <div class="arlo_tm_section" id="team">
-				<div class="arlo_tm_team">
-					<div class="container">
-						<div class="arlo_title_holder">
-							<h3>Our <span>Experts</span></h3>
-						</div>
-						<div class="team_inner">
-							<ul>
-								<li class="wow fadeInUp" data-wow-duration="0.8s">
-									<div class="inner">
-										<div class="image">
-											<img src="img/team/1.jpg" alt="" />
-											<div class="main" data-img-url="img/about/3.jpg"></div>
-											<div class="social">
-												<ul>
-													<li><a href="#"><i class="xcon-facebook"></i></a></li>	
-													<li><a href="#"><i class="xcon-twitter"></i></a></li>	
-													<li><a href="#"><i class="xcon-linkedin"></i></a></li>	
-													<li><a href="#"><i class="xcon-instagram"></i></a></li>	
-													<li><a href="#"><i class="xcon-behance"></i></a></li>	
-												</ul>
-											</div>
-										</div>
-										<div class="details">
-											<h3>Markus Brooklyn</h3>
-											<span>Web Developer</span>
-										</div>
-									</div>
-								</li>
-								<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-									<div class="inner">
-										<div class="image">
-											<img src="img/team/1.jpg" alt="" />
-											<div class="main" data-img-url="img/about/4.jpg"></div>
-											<div class="social">
-												<ul>
-													<li><a href="#"><i class="xcon-facebook"></i></a></li>	
-													<li><a href="#"><i class="xcon-twitter"></i></a></li>	
-													<li><a href="#"><i class="xcon-linkedin"></i></a></li>	
-													<li><a href="#"><i class="xcon-instagram"></i></a></li>	
-													<li><a href="#"><i class="xcon-behance"></i></a></li>	
-												</ul>
-											</div>
-										</div>
-										<div class="details">
-											<h3>Monica Rodriguez</h3>
-											<span>Designer</span>
-										</div>
-									</div>
-								</li>
-								<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
-									<div class="inner">
-										<div class="image">
-											<img src="img/team/1.jpg" alt="" />
-											<div class="main" data-img-url="img/about/5.jpg"></div>
-											<div class="social">
-												<ul>
-													<li><a href="#"><i class="xcon-facebook"></i></a></li>	
-													<li><a href="#"><i class="xcon-twitter"></i></a></li>	
-													<li><a href="#"><i class="xcon-linkedin"></i></a></li>	
-													<li><a href="#"><i class="xcon-instagram"></i></a></li>	
-													<li><a href="#"><i class="xcon-behance"></i></a></li>	
-												</ul>
-											</div>
-										</div>
-										<div class="details">
-											<h3>Steve Tylor</h3>
-											<span>Manager</span>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div> -->
-			<!-- /TEAM -->
-			
-			<!-- Pricing -->
-			<!-- <div class="arlo_tm_section" id="pricing">
-				<div class="arlo_tm_pricing">
-					<div class="container">
-						<div class="arlo_title_holder">
-							<h3>Choose <span>Pricing</span></h3>
-						</div>
-						<div class="pricing_list">
-							<ul>
-								<li class="wow fadeInUp" data-wow-duration="0.8s">
-									<div class="inner">
-										<div class="in">
-											<div class="icon"><img class="svg" src="img/svg/icon.svg" alt="" /></div>
-											<p class="title">Basic</p>
-											<p class="price">22$/<span>month</span></p>
-											<ul>
-												<li><span>2 Website</span></li>
-												<li><span>50 GB SSD Storage</span></li>
-												<li><span>Standard Performance</span></li>
-											</ul>
-											<div class="another_button">
-												<a href="#">Select</a>
-											</div>
-										</div>
-										<span class="one"></span>
-										<span class="two"></span>
-										<span class="three"></span>
-										<span class="four"></span>
-									</div>
-								</li>
-								<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-									<div class="inner">
-										<div class="in">
-											<div class="icon"><img class="svg" src="img/svg/fire.svg" alt="" /></div>
-											<p class="title">Plus</p>
-											<p class="price">33$/<span>month</span></p>
-											<ul>
-												<li><span>10 Website</span></li>
-												<li><span>200 GB SSD Storage</span></li>
-												<li><span>Standard Performance</span></li>
-											</ul>
-											<div class="another_button">
-												<a href="#">Select</a>
-											</div>
-											<div class="shape"></div>
-											<span class="recommend">Recommended</span>
-										</div>
-										<span class="one"></span>
-										<span class="two"></span>
-										<span class="three"></span>
-										<span class="four"></span>
-									</div>
-								</li>
-								<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
-									<div class="inner">
-										<div class="in">
-											<div class="icon"><img class="svg" src="img/svg/small-rocket-ship-silhouette.svg" alt="" /></div>
-											<p class="title">Pro</p>
-											<p class="price">55$/<span>month</span></p>
-											<ul>
-												<li><span>Unlimited Website</span></li>
-												<li><span>Unlimited SSD Storage</span></li>
-												<li><span>High Performance</span></li>
-											</ul>
-											<div class="another_button">
-												<a href="#">Select</a>
-											</div>
-										</div>
-										<span class="one"></span>
-										<span class="two"></span>
-										<span class="three"></span>
-										<span class="four"></span>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div> -->
-			<!-- /Pricing -->
-			
-			<!-- News -->
-			<!-- <div class="arlo_tm_section" id="news">
-				<div class="arlo_tm_news_another">
-					<div class="container">
-						<div class="arlo_title_holder">
-							<h3>Latest <span>News</span></h3>
-						</div>
-						<div class="news_list">
-							<ul>
-								<li class="wow fadeInUp" data-wow-duration="0.8s">
-									<div class="inner">
-										<div class="image">
-											<img src="img/news/1000x700.jpg" alt="" />
-											<div class="main" data-img-url="img/news/1.jpg"></div>
-											<a class="link" href="#"></a>
-										</div>
-										<div class="texts">
-											<div class="date">
-												<span>Jun 02, 2019 in <a href="#">Media</a></span>
-											</div>
-											<div class="title">
-												<h3><a href="#">Mockup World 2019</a></h3>
-											</div>
-										</div>
-										<span class="one"></span>
-										<span class="two"></span>
-										<span class="three"></span>
-										<span class="four"></span>
-									</div>
-								</li>
-								<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-									<div class="inner">
-										<div class="image">
-											<img src="img/news/1000x700.jpg" alt="" />
-											<div class="main" data-img-url="img/news/2.jpg"></div>
-											<a class="link" href="#"></a>
-										</div>
-										<div class="texts">
-											<div class="date">
-												<span>July 14, 2019 in <a href="#">Development</a></span>
-											</div>
-											<div class="title">
-												<h3><a href="#">What is Development ?</a></h3>
-											</div>
-										</div>
-										<span class="one"></span>
-										<span class="two"></span>
-										<span class="three"></span>
-										<span class="four"></span>
-									</div>
-								</li>
-								<li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
-									<div class="inner">
-										<div class="image">
-											<img src="img/news/1000x700.jpg" alt="" />
-											<div class="main" data-img-url="img/news/3.jpg"></div>
-											<a class="link" href="#"></a>
-										</div>
-										<div class="texts">
-											<div class="date">
-												<span>July 25, 2019 in <a href="#">Photography</a></span>
-											</div>
-											<div class="title">
-												<h3><a href="#">Art of Photography</a></h3>
-											</div>
-										</div>
-										<span class="one"></span>
-										<span class="two"></span>
-										<span class="three"></span>
-										<span class="four"></span>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div> -->
-			<!-- /News -->
-			
-			<!-- Contact -->
-			<div class="arlo_tm_section" id="contact">
-				<div class="arlo_tm_contact_another">
-					<div class="container">
-						<div class="arlo_title_holder">
-							<h3>Get in <span>Touch</span></h3>
-						</div>
-						<div class="contact_inner">
-							<div class="left wow fadeInUp" data-wow-duration="0.8s">
+							<div class="pricing_inner">
 								<ul>
 									<li>
 										<div class="inner">
-											<img class="svg" src="img/svg/call-1.svg" alt="" />
-											<span>+389 72 77 50 51</span>
+											<img class="svg" src="img/svg/icon.svg" alt="" />
+											<h3 class="title">Small</h3>
+											<h3 class="price">$300</h3>
+											<ul>
+												<li><p>Web Development</p></li>
+												<li><p>Creative Design</p></li>
+												<li><p>Photography</p></li>
+											</ul>
+											<div class="arlo_tm_button">
+												<a href="#">Select</a>
+											</div>
+										</div>
+									</li>
+									<li class="active">
+										<div class="inner">
+											<img class="svg" src="img/svg/small-rocket-ship-silhouette.svg" alt="" />
+											<h3 class="title">Medium</h3>
+											<h3 class="price">$500</h3>
+											<ul>
+												<li><p>Web Development</p></li>
+												<li><p>Creative Design</p></li>
+												<li><p>Photography</p></li>
+											</ul>
+											<div class="arlo_tm_button">
+												<a href="#">Select</a>
+											</div>
 										</div>
 									</li>
 									<li>
 										<div class="inner">
-											<img class="svg" src="img/svg/message-1.svg" alt="" />
-											<span><a target="_top" href="mailto:aleksandar.meckaroski@gmail.com">aleksandar.meckaroski@gmail.com</a></span>
-										</div>
-									</li>
-									<li>
-										<div class="inner">
-											<img class="svg" src="img/svg/instagram-1.svg" alt="" />
-											<span><a target="_blank" href="https://www.instagram.com/alekmeckaroski">@alekmeckaroski</a></span>
+											<img class="svg" src="img/svg/fire.svg" alt="" />
+											<h3 class="title">Professional</h3>
+											<h3 class="price">$999</h3>
+											<ul>
+												<li><p>Web Development</p></li>
+												<li><p>Creative Design</p></li>
+												<li><p>Photography</p></li>
+											</ul>
+											<div class="arlo_tm_button">
+												<a href="#">Select</a>
+											</div>
 										</div>
 									</li>
 								</ul>
 							</div>
-							<!-- <div class="right wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-								<form action="/" method="post" class="contact_form" id="contact_form">
-									<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
-									<div class="empty_notice"><span>Please Fill Required Fields</span></div>
-									<div class="first_row">
-										<ul>
-											<li>
-												<input type="text" id="name" placeholder="Name" />
-											</li>
-											<li>
-												<input type="text" id="email" placeholder="Email" />
-											</li>
-										</ul>
-									</div>
-									<div class="second_row">
-										<textarea id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="another_button">
-										<a id="send_message" href="#">Submit</a>
-									</div>
-								</form>
-							</div> -->
 						</div>
 					</div>
-				</div>
-			</div>
-			<!-- /Contact -->
-			
-			<!-- Footer -->
-			<div class="arlo_tm_section">
-				<div class="arlo_tm_footer_another">
-					<div class="container">
-						<div class="footer_inner">
-							<div class="left wow fadeInUp" data-wow-duration="0.8s">
-								<p>Copyright &copy; Aleksandar Mechkaroski
+				</div> -->
+				<!-- /PRICING -->
+				
+				<!-- NEWS -->
+				<!-- <div class="arlo_tm_section" id="news">
+					<div class="arlo_tm_news">
+						<div class="container">
+							<div class="arlo_title_holder">
+								<span>Latest News</span>
+								<h3>News</h3>
+							</div>
+							<div class="news_inner">
+								<ul>
+									<li>
+										<div class="inner">
+											<div class="image">
+												<img class="larger" src="img/news/1000x700.jpg" alt="" />
+												<img class="smaller" src="img/news/1000x500.jpg" alt="" />
+												<div class="main" data-img-url="img/news/1.jpg"></div>
+												<div class="overlay"></div>
+												<span class="category">Branding</span>
+												<a class="link" href="#"></a>
+											</div>
+											<div class="details">
+												<div class="date">
+													<p>April 01, 2020 by <a href="#">Adam</a></p>
+												</div>
+												<h3 class="title"><a href="#">The Unwritten Rules of Naming Your Business</a></h3>
+											</div>
+											<div class="full_des">
+												<p>Every industry has a set of unwritten branding rules, or tendencies, that become codified over time. Sometimes they can become clichés. Most industries will have only a few types of names. This happens naturally: One company finds success, and the next company mimics them because it worked for the first. The next thing you know, it’s a rule, and no one remembers why it started. This applies to everything from how businesses are run to color choice and typography to their names. But let’s look at naming for now. </p>
+												<p>The name of my company, Bullhorn, is a good example. There are general naming trends in the branding agency world that have become unwritten rules. The first is to use a modifier with the word “brand,” like this:</p>
+												<div class="des_serv_list">
+													<ul>
+														<li><span>Moving Brands</span></li>
+														<li><span>InterBrand</span></li>
+														<li><span>FutureBrand</span></li>
+													</ul>
+												</div>
+												<p>I chose these companies because they’re all large, successful agencies that do great work. In many ways, they’re the agencies Bullhorn aspires to be. But their names are forgettable. More than that, they’re undifferentiated. How could you remember if you liked the work from Moving, Inter, or Future? The names are too similar. While these names are unique, they don’t tell you much about the company. What they do is give historical weight. They sound established. They sound old. Choosing this sort of name puts you in the same tier as other professional service providers—hence the “law firm model” description. What these names tell consumers is that the providers will tend to be safe, traditional, and fairly expensive choices.</p>
+												<div class="social">
+													<span>Share:</span>
+													<ul>
+														<li><a href="#"><i class="xcon-facebook"></i></a></li>
+														<li><a href="#"><i class="xcon-twitter"></i></a></li>
+														<li><a href="#"><i class="xcon-linkedin"></i></a></li>
+														<li><a href="#"><i class="xcon-instagram"></i></a></li>
+														<li><a href="#"><i class="xcon-behance"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="inner">
+											<div class="image">
+												<img class="larger" src="img/news/1000x700.jpg" alt="" />
+												<img class="smaller" src="img/news/1000x500.jpg" alt="" />
+												<div class="main" data-img-url="img/news/2.jpg"></div>
+												<div class="overlay"></div>
+												<span class="category">Design</span>
+												<a class="link" href="#"></a>
+											</div>
+											<div class="details">
+												<div class="date">
+													<p>February 23, 2020 by <a href="#">Tom</a></p>
+												</div>
+												<h3 class="title"><a href="#">4 Startup Branding Trends Finding Success</a></h3>
+											</div>
+											<div class="full_des">
+												<p>As traditional direct advertising continues to lose its luster with modern audiences, customers are seeking new, tech-based experiences. These technologies, like virtual and augmented reality, allow audiences to interact with their favorite brands in brand new ways. Brands that find ways to reinvent themselves in digital spaces are seen as forward-thinking and intriguing by millennials and Gen Zers. </p>
+												<p>Content like BuzzFeed’s interactive quizzes has taken over social media, allowing audiences to personalize themselves through the brands they interact with online. This past year, IKEA expanded upon the capabilities of its augmented reality app, allowing users to place multiple pieces of virtual IKEA furniture into their rooms, essentially “trying before they buy.” The ability for customers to easily visualize furniture in their own rooms helps them engage with IKEA on a more personal level, making their content and branding more accessible to consumers than ever before. By using immersive technologies like VR and AR, brands can position themselves as extensions of their consumers’ perceptions of the world.</p>
+												<p>Trendy branding is less about the services brands offer and more about evoking strong emotions, core values, and lofty ideas. Modern brand imagery has reflected this shift by becoming more abstract and dreamier than ever before. By utilizing more daring, eclectic, and post-modern imagery, trendy startups promote the more ethereal aspects of their brand in a time when these intangibles are more important than ever.Skillshare, an online learning platform focused on the creative arts, has frequently used abstract imagery in its blog to promote its brand as a hub of outside-the-box creativity. The striking imagery showcases the creativity of Skillshare’s community, establishing its brand as a digital space in which forward-thinking imaginativeness is encouraged. </p>
+												<div class="social">
+													<span>Share:</span>
+													<ul>
+														<li><a href="#"><i class="xcon-facebook"></i></a></li>
+														<li><a href="#"><i class="xcon-twitter"></i></a></li>
+														<li><a href="#"><i class="xcon-linkedin"></i></a></li>
+														<li><a href="#"><i class="xcon-instagram"></i></a></li>
+														<li><a href="#"><i class="xcon-behance"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="inner">
+											<div class="image">
+												<img class="larger" src="img/news/1000x700.jpg" alt="" />
+												<img class="smaller" src="img/news/1000x500.jpg" alt="" />
+												<div class="main" data-img-url="img/news/3.jpg"></div>
+												<div class="overlay"></div>
+												<span class="category">Lifestyle</span>
+												<a class="link" href="#"></a>
+											</div>
+											<div class="details">
+												<div class="date">
+													<p>January 31, 2020 by <a href="#">Emma</a></p>
+												</div>
+												<h3 class="title"><a href="#">Why Personal Branding Is a Secret Weapon</a></h3>
+											</div>
+											<div class="full_des">
+												<p>If a stranger approached you on the street and tried to sell you an ecommerce consulting package, you wouldn’t be interested unless they had some serious facts about how their package could help you. But, if someone you knew for their expertise in scaling ecommerce businesses approached you, you’d be more likely to buy from them. You’d feel connected to them. </p>
+												<p>A personal brand doesn’t just help to get customers invested in your cause -- it also helps get your employees invested. Altimeter shared research that proves when a company invested in personal branding initiatives, “employees were 27 percent more hopeful about their company, 20 percent more likely to stay, and 40 percent more likely to believe in the competitiveness of their employer.” These personal branding initiatives could include a “meet the team” campaign on social media, a monthly letter from the CEO with accessible and friendly language, or starting a YouTube channel featuring interviews with key team members.</p>
+												<p>In addition to helping current employees get behind your cause, it could also help with recruiting, too. If you’re looking to expand your company’s team, high-quality employees may be more likely to interview with you and accept a position if they’ve heard about you in your industry, or feel like they know you beyond your initial emails because of the content you have available. Finally, personal branding is at its height when it’s working for you on social media. A recent research index from Sprout Social found that customers are 77 percent more likely to buy from a brand if they follow them on social media. And, customers will only follow a brand on social media if they have content that’s interesting, useful, or funny to them. </p>
+												<div class="social">
+													<span>Share:</span>
+													<ul>
+														<li><a href="#"><i class="xcon-facebook"></i></a></li>
+														<li><a href="#"><i class="xcon-twitter"></i></a></li>
+														<li><a href="#"><i class="xcon-linkedin"></i></a></li>
+														<li><a href="#"><i class="xcon-instagram"></i></a></li>
+														<li><a href="#"><i class="xcon-behance"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<!-- /NEWS -->
+				
+				<!-- CONTACT -->
+				<div class="arlo_tm_section" id="contact">
+					<div class="arlo_tm_contact">
+						<div class="container">
+							<div class="arlo_title_holder">
+								<span>Get in Touch</span>
+								<h3>Contact</h3>
+							</div>
+							<div class="contact_inner">
+								<div class="short_list">
+									<ul>
+										<li>
+											<img class="svg" src="img/svg/location-1.svg" alt="" />
+											<h3>Location</h3>
+											<p>Skopje, Macedonia</p>
+										</li>
+										<li>
+											<img class="svg" src="img/svg/message-3.svg" alt="" />
+											<h3>Email</h3>
+											<p><a href="mailto:aleksandar.meckaroski@gmail.com" target="_blank">aleksandar.meckaroski@gmail.com</a></p>
+										</li>
+										<li>
+											<img class="svg" src="img/svg/call-2.svg" alt="" />
+											<h3>Phone</h3>
+											<p>+389 72 775 051</p>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- /Footer -->
-			
-		</div>
-		<!-- /HOMEPAGE 2 -->
+				<!-- /CONTACT -->
 				
-		
+				<!-- FOOTER -->
+				<div class="arlo_tm_footer">
+					<div class="container">
+						<div class="footer_inner">
+							<div class="copy">
+								<p>Copyright &copy; Aleksandar Mechkaroski</p>
+							</div>
+							<div class="top">
+								<a class="arlo_tm_totop" href="#"></a> 
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /FOOTER -->
+			
+			</div>
+		</div>
+		<!-- /RIGHTPART -->
 	</div>
 </div>
 <!-- / WRAPPER ALL -->

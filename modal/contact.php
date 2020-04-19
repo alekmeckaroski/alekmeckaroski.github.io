@@ -1,7 +1,7 @@
 <?php
 
 // Put contacting email here
-$php_main_email = "aleksandar.meckaroski@gmail.com";
+$php_main_email = "marketifyhelp@gmail.com";
 
 //Fetching Values from URL
 $php_name = $_POST['ajax_name'];
@@ -27,7 +27,7 @@ if (filter_var($php_email, FILTER_VALIDATE_EMAIL)) {
 		$php_headers .= 'Cc:' . $php_email. "\r\n"; // Carbon copy to Sender
 		
 		$php_template = '<div style="padding:50px;">Hello ' . $php_name . ',<br/>'
-		. 'Thank you for contacting me.<br/><br/>'
+		. 'Thank you for contacting us.<br/><br/>'
 		. '<strong style="color:#f00a77;">Name:</strong>  ' . $php_name . '<br/>'
 		. '<strong style="color:#f00a77;">Email:</strong>  ' . $php_email . '<br/>'
 		. '<strong style="color:#f00a77;">Message:</strong>  ' . $php_message . '<br/><br/>'

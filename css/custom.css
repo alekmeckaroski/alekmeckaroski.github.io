@@ -10,14 +10,20 @@
 }
 
 .portfolio-item:nth-child(odd) {
+    /* border: 3px solid #f7b920; */
     background-color: #f7b920;
     -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
-    clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 10%, 100% 85%, 0% 101%);
     color: white
 }
 
 .portfolio-item:nth-child(odd) h3 {
     color: white;
+}
+
+.portfolio-item:nth-child(odd) a {
+    text-decoration: underline;
+    color: white
 }
 
 .portfolio-item:nth-child(even) {
@@ -33,6 +39,11 @@
 .technology-stack > img {
     width: 24px;
     height: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #f7b920
 }
 
 @media (max-width: 480px) {
