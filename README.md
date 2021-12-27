@@ -1,3 +1,3 @@
-# alekmeckaroski.github.io
+# Personal page
 
 My online page.
